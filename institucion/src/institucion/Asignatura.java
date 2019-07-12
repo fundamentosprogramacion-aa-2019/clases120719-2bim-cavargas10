@@ -12,7 +12,7 @@ public class Asignatura {
     private int creditos;
 
     public void establecerNombre(String n) {
-        nombre = n;
+        nombre = n; 
     }
 
     public void establecerHorario(String h) {

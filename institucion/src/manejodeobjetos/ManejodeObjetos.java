@@ -1,6 +1,6 @@
 package manejodeobjetos;
 
-import institucion.Asignatura;
+import institucion.Asignatura; 
 import institucion.Docente;
 import institucion.Paralelo;
 

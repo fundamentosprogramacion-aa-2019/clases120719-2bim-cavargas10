@@ -20,7 +20,7 @@ public class Docente {
 
     public void establecerAnioExperiencia(int ex) {
         anioExperiencia = ex;
-    }
+    }  
 
     public String obtenerNombre() {
         return nombre;
