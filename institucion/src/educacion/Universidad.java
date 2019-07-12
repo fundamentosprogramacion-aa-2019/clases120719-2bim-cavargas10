@@ -7,18 +7,31 @@ package educacion;
 public class Universidad {
 
     private String nombre;
-    private Carrera[] listaCarrera;
-    
-    public void establecerNombre(String n){
+    private Carrera[] listaCarreras;
+    private int AlumnosUniversidad;
+
+    public void establecerNombre(String n) {
         nombre = n;
     }
-    public String obtenerNombre (){
+
+    public String obtenerNombre() {
         return nombre;
     }
-    public void establecerListaCarrera(Carrera[] lista){
-        listaCarrera = lista;
+
+    public void establecerListaCarreras(Carrera[] lista) {
+        listaCarreras = lista;
     }
-    public Carrera[] obtenerListaCarrera(){
-        return listaCarrera;
+
+    public Carrera[] obtenerListaCarreras() {
+        return listaCarreras;
     }
+    
+    public void establecerAlumnosUniversidad(int alumnUni){
+        AlumnosUniversidad = alumnUni;
+    }
+    
+    public int obtenerAlumnosUniversidad(){
+        return AlumnosUniversidad;
+    }
+
 }

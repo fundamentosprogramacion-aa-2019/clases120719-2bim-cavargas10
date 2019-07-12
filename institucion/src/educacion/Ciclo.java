@@ -6,7 +6,7 @@ package educacion;
  */
 public class Ciclo {
 
-    private String nombre;
+    private String nombre; 
     private int numAlumnos;
 
     public void establecerNombre(String n) {
@@ -24,4 +24,5 @@ public class Ciclo {
     public int obtenerNumAlumnos() {
         return numAlumnos;
     }
+    
 }
