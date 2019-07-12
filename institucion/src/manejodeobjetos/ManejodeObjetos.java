@@ -50,8 +50,7 @@ public class ManejodeObjetos {
 
         paraleloUno.establecerNombre("Paralelo A");
         paraleloUno.establecerListaAsignatura(lista);
-        
-        
+
         /*for (int i = 0; i < lista.length; i++) {
             System.out.printf("Asignatura: %s\nDocente: \n\tNombre: %s\n\t"
                     + "Edad: %d\n", 
@@ -59,6 +58,8 @@ public class ManejodeObjetos {
                     lista[i].obtenerDocente().obtenerNombre(), 
                     lista[i].obtenerDocente().obtenerEdad());
         }
+         */
+ /*
         for (int i = 0; i < lista.length; i++) {
             Asignatura a = lista[i];
             System.out.printf("Asignatura: %s\nDocente: \n\tNombre: %s\n\t"
@@ -67,6 +68,23 @@ public class ManejodeObjetos {
                     a.obtenerDocente().obtenerNombre(),
                     a.obtenerDocente().obtenerEdad());
         }*/
+        String cadena = "";
+        cadena = String.format("%sReporte del %s\n", cadena,
+                paraleloUno.obtenerNombre());
+
+        for (int i = 0; i < paraleloUno.obtenerListaAsignatura().length; i++) {
+            Asignatura a = lista[i];
+            cadena = String.format("%sAsignatura: %s\nDocente: \n\tNombre: %s\n\t"
+                    + "Edad: %d\n",
+                    cadena, a.obtenerNombre(),
+                    a.obtenerDocente().obtenerNombre(),
+                    a.obtenerDocente().obtenerEdad());
+        }
+
+        cadena = String.format("%sNumero de Creditos del Paralelo: %.2f\n",
+                cadena, paraleloUno.obtenerCreditosParalelo());
+
+        System.out.printf(cadena);
     }
 
 }
